@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: gmm_tx.DefinitionTestSuite
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 593.593 sec - in gmm_tx.DefinitionTestSuite

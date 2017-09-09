@@ -27,5 +27,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/justingiron/Downloads/selenium-chrome-driver-2.0b3.jar/selenium-chrome-driver-2.0b3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

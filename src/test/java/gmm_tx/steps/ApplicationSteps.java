@@ -19,35 +19,37 @@ import gmm_tx.steps.serenity.EndUserSteps;
 public class ApplicationSteps {
 	
 	WebDriver webDriver = null;
-	public ApplicationSteps() {
-		System.out.println("In the constructor --Will check for chromedriver...");
-		   File drvFile = new File("/Applications/gg/chromedriver");
-		   if (drvFile.exists()) {
-			   if (drvFile.canExecute()) {
-				   System.out.println("Found chrome driver and can execute it");
-			   }
-		   } else {
-			   System.out.println("Can't find chrome driver");
-		   }
-			System.out.println("\t about to call webDriver.get ..  IN FILE ApplicationSteps.java");
-	        System.setProperty("webdriver.chrome.driver", "/Applications/gg/chromedriver");
-	        webDriver = new ChromeDriver();
+	public ApplicationSteps() {	
+								// THIS IS AN EMPTY CXR ... 
+								// this is also an inelegant solution for now
+									// WE DONT NEED THIS BC COMPILER WILL USE IMPLICIT CXR 
+									//
+									// WE SWITCHED FROM CREATING THE WEBDRIVER INSIDE THIS CXR
+									//  BECAUSE IT GENERATED A NEW ONE EA TIME THIS CLASS WAS INSTANTIATED
+									//
+									// NOW OUR QUESTION:
+									//	1.  WHAT IS CALLING THIS CLASS n-TIMES?
+									//	2. HOW DOES THE FWK KNOW WH CLASS TO CALL TO START EXE THE STEPS
+									//	3.  DOES IT GO THRU AND LOOK FOR INSTANCES OF
+									//			@Given
+									//					?
+									//
 	}
 	
 	   @Given("^the user has logged into GMM$")
 	public void the_user_has_logged_into_GMM() 										throws Throwable {
-//		   System.out.println("Will check for chromedriver...");
-//		   File drvFile = new File("/Applications/gg/chromedriver");
-//		   if (drvFile.exists()) {
-//			   if (drvFile.canExecute()) {
-//				   System.out.println("Found chrome driver and can execute it");
-//			   }
-//		   } else {
-//			   System.out.println("Can't find chrome driver");
-//		   }
-//			System.out.println("\t about to call webDriver.get ..  IN FILE ApplicationSteps.java");
-//	        System.setProperty("webdriver.chrome.driver", "/Applications/gg/chromedriver");
-//	        WebDriver webDriver = new ChromeDriver();
+			System.out.println("the_user_has_logged_into_GMM ... NOT IN THE CXR...");
+			   File drvFile = new File("/Applications/gg/chromedriver");
+			   if (drvFile.exists()) {
+				   if (drvFile.canExecute()) {
+					   System.out.println("Found chrome driver and can execute it");
+				   }
+			   } else {
+				   System.out.println("Can't find chrome driver");
+			   }
+				System.out.println("\t about to call webDriver.get ..  IN FILE ApplicationSteps.java");
+		        System.setProperty("webdriver.chrome.driver", "/Applications/gg/chromedriver");
+		        webDriver = new ChromeDriver();
 		   webDriver.get("http://localhost:8080/home");
 		System.out.println("@GIVEN:	\t the_user_has_logged_into_GMM ..  IN FILE ApplicationSteps.java");
 	}
@@ -64,7 +66,9 @@ public class ApplicationSteps {
 		    	} else {
 		    		System.out.println("Link is NOT enabled -- BOO!!!");
 		    	}
-
+		    	ApplicationsPage appPage = new ApplicationsPage(webDriver);
+		    	String title = appPage.getTitle();
+		    	System.out.println("Page title: " + title);
 			}
 	
 			    @Then("^they should see the page that lists their application$")

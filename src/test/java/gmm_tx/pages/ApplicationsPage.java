@@ -13,30 +13,29 @@ import java.util.Map;
 // there's a better way to do this that leaves out http://ui-dev.ocp-apps.bahincubator.com
 
 
-//@DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/applicationsLanding")
+							//@DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/applicationsLanding")
 @DefaultUrl("http://localhost:8080/Application/applicationsLanding")
-//@DefaultUrl("http://localhost:8080/home")
+							//@DefaultUrl("http://localhost:8080/home")
 
 public class ApplicationsPage extends PageObject 
 	{
-		private WebDriver myDriver = null;
+		private WebDriver webDriver = null;
 		private WebElement createApplication_bn;
-		
-									//		driver.findElement(By .xpath("/html/body/div/div/app-root/app-application/dynamic-component/div/div/div/div[2]/sf-form/form/sf-form-element/div/sf-widget-chooser/sf-form-object/fieldset[1]/div[1]/sf-form-element/div/")) public WebElement createApplication_bn; 
-									//		@FindBy(xpath = "/html/body/div/div/app-root/app-application/dynamic-component/div/div/div/div[2]/sf-form/form/sf-form-element/div/sf-widget-chooser/sf-form-object/fieldset[1]/div[1]/sf-form-element/div")
-									//		public WebElement Organization;
-									//		@FindBy(xpath = "/html/body/div/div/app-root/app-application/dynamic-component/div/div/div/div[2]/sf-form/form/sf-form-element/div/sf-widget-chooser/sf-form-object/fieldset[1]/div[1]/sf-form-element/div/")		
-									//		findElement(By .xpath("/html/body/div/div/app-root/app-application/dynamic-component/div/div/div/div[2]/sf-form/form/sf-form-element/div/sf-widget-chooser/sf-form-object/fieldset[1]/div[1]/sf-form-element/div/"));			   
 
-									// CONSTRUCTOR
+		
+									// START CONSTRUCTOR
 			public ApplicationsPage(WebDriver		driver	) 
 					{
 						     				super(	driver	);
-						     			 myDriver = driver;
+						     			 webDriver = driver;
+						   System.out.println("WE GOT TO THE CXR FOR ApplicationsPage, ABOUT TO get HOME PAGE");
+						   webDriver.get("http://localhost:8080/home");
 					}	
+									// END CONSTRUCTOR
+			
 			
 		    public void createApplication() {
-				WebElement createButton = myDriver.findElement(By.id("create-application"));
+				WebElement createButton = webDriver.findElement(By.id("create-application"));
 				
 				System.out.println("Have found the create button...");
 				

@@ -24,12 +24,7 @@ public class EndUserSteps {
 	private WebElement createApplication_bn;
 		
     @Step
-//    public void createApplication(String keyword) 
-//	    {
-//	    	WebDriver webDriver = new ChromeDriver();
-//	    	applicationPage =new ApplicationsPage(webDriver);
-//	    }
-//	
+
     public void createApplication() 
 	    {
     	                            WebDriver webDriver = new ChromeDriver();
@@ -38,13 +33,7 @@ public class EndUserSteps {
 			System.out.println("RIGHT AFTER CLICKED BUTTON:  createApplication_bn 	IN FILE EndUserSteps.java ... ");
 	    }
     
-    public void enterApplicationInformation (Map<String, String> map) {
-			System.out.println("enterApplicationInformation ..  				IN FILE EndUserSteps.java");
-									//  for (Map.Entry<String, String> entry : map.entrySet())   { webDriver.findElement(By.id(entry.getKey())).sendKeys(entry.getValue()); }
-									//  driver.findElement(By.id("save-and-continue-button")).click();  
-    }
-} 
-		      
+} 	      
 									//    @Step
 									//    public void starts_search() {
 									//        dictionaryPage.lookup_terms();

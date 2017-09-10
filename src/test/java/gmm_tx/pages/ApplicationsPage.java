@@ -15,6 +15,7 @@ import java.util.Map;
 
 //@DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/applicationsLanding")
 @DefaultUrl("http://localhost:8080/Application/applicationsLanding")
+//@DefaultUrl("http://localhost:8080/home")
 
 public class ApplicationsPage extends PageObject 
 	{

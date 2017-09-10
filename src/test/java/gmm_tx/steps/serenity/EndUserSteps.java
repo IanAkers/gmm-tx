@@ -22,16 +22,14 @@ public class EndUserSteps {
 
     ApplicationsPage applicationPage;
 	private WebElement createApplication_bn;
-	
-	
-									// CONSTRUCTOR
+		
     @Step
 //    public void createApplication(String keyword) 
 //	    {
 //	    	WebDriver webDriver = new ChromeDriver();
 //	    	applicationPage =new ApplicationsPage(webDriver);
 //	    }
-	
+//	
     public void createApplication() 
 	    {
     	                            WebDriver webDriver = new ChromeDriver();

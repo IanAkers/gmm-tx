@@ -15,7 +15,6 @@ import java.util.Map;
 
 							//@DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/applicationsLanding")
 @DefaultUrl("http://localhost:8080/Application/applicationsLanding")
-							//@DefaultUrl("http://localhost:8080/home")
 
 public class ApplicationsPage extends PageObject 
 	{
@@ -26,26 +25,41 @@ public class ApplicationsPage extends PageObject
 									// START CONSTRUCTOR
 			public ApplicationsPage(WebDriver		driver	) 
 					{
-						     				super(	driver	);
-						     			 webDriver = driver;
-						   System.out.println("WE GOT TO THE CXR FOR ApplicationsPage, ABOUT TO get HOME PAGE");
-						   webDriver.get("http://localhost:8080/home");
+						     super(	driver	);
+						     webDriver = driver;
+						   System.out.println("WE GOT TO THE CXR FOR ApplicationsPage");
+						   if (webDriver == null) {
+							   System.out.println("Web driver is NULL here!!");
+						   }
+						   
 					}	
 									// END CONSTRUCTOR
 			
 			
 		    public void createApplication() {
-				WebElement createButton = webDriver.findElement(By.id("create-application"));
-				
-				System.out.println("Have found the create button...");
-				
-				if (createButton.isEnabled()) {
-					System.out.println("Create button is enabled...!!");
-					createButton.click();
-							
-				} else {
-					System.out.println("Button is not enabled -- BOO!");
-				}	
+		    	
+		    	System.out.println("IN createApplication");
+		    	if (webDriver == null) {
+		    		System.out.println("Web driver is null");
+		    	}
+		    	if (webDriver != null) {
+					WebElement createButton = webDriver.findElement(By.id("create-application"));
+					
+														System.out.println("Have found the create button...");
+					
+				    if (createButton != null) {
+						if (createButton.isEnabled()) {
+															System.out.println("Create button is enabled...!!");
+							createButton.click();
+									
+						} else {
+															System.out.println("Button is not enabled -- BOO!");
+						}
+				    } else {
+				    	System.out.println("Create button is null");
+				    }
+		    	}
+			    
 				
 		    	//createApplication_bn.click();
 		    }

@@ -21,7 +21,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class EndUserSteps {
 
     ApplicationsPage applicationPage;
-	private WebElement createApplication_bn;
+	
+    private WebElement createApplication_bn;
 		
     @Step
 
@@ -30,7 +31,7 @@ public class EndUserSteps {
     	                            WebDriver webDriver = new ChromeDriver();
     	applicationPage =new ApplicationsPage(webDriver);
 			createApplication_bn.click();
-			System.out.println("RIGHT AFTER CLICKED BUTTON:  createApplication_bn 	IN FILE EndUserSteps.java ... ");
+			System.out.println("RIGHT AFTER CLICKED BUTTON:  createApplication_bn 	WE ARE IN FILE EndUserSteps.java ... ");
 	    }
     
 } 	      

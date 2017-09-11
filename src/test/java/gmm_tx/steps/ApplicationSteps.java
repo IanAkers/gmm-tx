@@ -2,6 +2,7 @@ package gmm_tx.steps;
 
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.pages.PageObject;
 
 import java.io.File;
 
@@ -14,6 +15,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gmm_tx.pages.ApplicationsPage;
+import gmm_tx.pages.HomePage;
 import gmm_tx.steps.serenity.EndUserSteps;
 
 public class ApplicationSteps {
@@ -50,7 +52,8 @@ public class ApplicationSteps {
 				System.out.println("\t about to call webDriver.get ..  IN FILE ApplicationSteps.java");
 		        System.setProperty("webdriver.chrome.driver", "/Applications/gg/chromedriver");
 		        webDriver = new ChromeDriver();
-		   webDriver.get("http://localhost:8080/home");
+		   HomePage homePage = new HomePage(webDriver);
+		   homePage.openHomePage();
 		System.out.println("@GIVEN:	\t the_user_has_logged_into_GMM ..  IN FILE ApplicationSteps.java");
 	}
 
@@ -61,14 +64,11 @@ public class ApplicationSteps {
 		    	WebElement clickAppLink = webDriver.findElement(By.id("clickApplication"));
 		    	System.out.println("Have created clickAppLink");
 		    	if (clickAppLink.isEnabled()) {
-		    		System.out.println("Link is enabled...");
+		    		System.out.println("----clickAppLink LINK IS ENABLED ...");
 		    		clickAppLink.click();
 		    	} else {
-		    		System.out.println("Link is NOT enabled -- BOO!!!");
-		    	}
-		    	ApplicationsPage appPage = new ApplicationsPage(webDriver);
-		    	String title = appPage.getTitle();
-		    	System.out.println("Page title: " + title);
+		    		System.out.println("----clickAppLink LINK IS not ENABLED -- BOO!!!");
+		    	}   	
 			}
 	
 			    @Then("^they should see the page that lists their application$")
@@ -80,11 +80,23 @@ public class ApplicationSteps {
 	   @Given("^the user is on the page that shows applications$")
 	public void the_user_is_on_the_page_that_shows_applications() 					throws Throwable {
 		System.out.println("@GIVEN:	\t the_user_is_on_the_page_that_shows_applications ..  IN FILE ApplicationSteps.java");
+		System.setProperty("webdriver.chrome.driver", "/Applications/gg/chromedriver");
+        webDriver = new ChromeDriver();
+		if (webDriver == null) {
+			System.out.println("IN ApplicationSteps.the_user_is_on_the_page_that_shows...;  webDriver is NULL");
+		}
+		ApplicationsPage applicationsPage = new  ApplicationsPage(webDriver); 
+		applicationsPage.createApplication();
 	}
 
 		    @When("^the user clicks on the link to create application$")
 		public void the_user_clicks_on_the_link_to_create_application() 			throws Throwable {
 			System.out.println("\t@WHEN:	\t the_user_clicks_on_the_link_to_create_application ..  IN FILE ApplicationSteps.java");
+//			if (webDriver == null) {
+//				System.out.println("IN ApplicationSteps.the_user_clicks_on;  webDriver is NULL");
+//			}
+//			ApplicationsPage applicationsPage = new  ApplicationsPage(webDriver); 
+//			applicationsPage.createApplication();
 		}
 	
 			    @Then("^they should see the page to enter application data$")

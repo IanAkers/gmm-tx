@@ -41,9 +41,9 @@ public class HomePage extends PageObject {
 		public void userClicksOnSidebarLinkForAPPLICATION() {
 
 			WebElement clickApplicationLinkOnSidebar = webDriver.findElement(By.id("clickApplication"));
-																System.out.println("Have created clickApplicationLinkOnSidebar");
+																System.out.println("WE FOUND ..  clickApplication");
 		if (clickApplicationLinkOnSidebar.isEnabled()) {
-																System.out.println("Link clickApplicationLinkOnSidebar is enabled...");
+																System.out.println("LINK clickApplicationLinkOnSidebar IS ENABLED...");
 																System.out.println("\t:	\t the_user_clicks_on_the_sidebar_link_for_application ..  IN FILE HomePage.java");			
 																System.out.println("ABOUT TO .. the_user_clicks_on_the_sidebar_link_for_application");
 			clickApplicationLinkOnSidebar.click();

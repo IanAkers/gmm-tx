@@ -28,8 +28,8 @@ public class EndUserSteps {
 
     public void createApplication() 
 	    {
-    	                            WebDriver webDriver = new ChromeDriver();
-    	applicationPage =new ApplicationsPage(webDriver);
+    	                                WebDriver webDriver = new ChromeDriver();
+    	    applicationPage =new ApplicationsPage(webDriver);
 			createApplication_bn.click();
 			System.out.println("RIGHT AFTER CLICKED BUTTON:  createApplication_bn 	WE ARE IN FILE EndUserSteps.java ... ");
 	    }

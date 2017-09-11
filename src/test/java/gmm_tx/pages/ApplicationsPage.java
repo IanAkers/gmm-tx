@@ -1,4 +1,5 @@
 package gmm_tx.pages;
+
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,67 +13,28 @@ import java.util.List;
 import java.util.Map;
 // there's a better way to do this that leaves out http://ui-dev.ocp-apps.bahincubator.com
 
-
-							//@DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/applicationsLanding")
+//@DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/applicationsLanding")
 @DefaultUrl("http://localhost:8080/Application/applicationsLanding")
 
-public 			class 	ApplicationsPage extends PageObject 
-	{
-		private WebDriver 	webDriver = null;
-//		private WebElement 	createApplication_bn;
+public class ApplicationsPage extends PageObject {
+	private WebDriver webDriver;
+	@FindBy(id = "create-application")
+	WebElementFacade createApplication_Link;
 
-		
-										// START CONSTRUCTOR
-		public 			ApplicationsPage(WebDriver		driver	) 
-							{
-												super(	driver	);
-										webDriver = 	driver;
-								     							System.out.println("WE GOT TO THE CXR FOR ApplicationsPage");
-								   if (	webDriver == null) {
-									   							System.out.println("webDriver IS NULL!!");
-								   }
-								   
-							}	
-										// END CONSTRUCTOR
-			
-		
-			    public void 		createApplication() {
-			    	
-			    												System.out.println("IN createApplication");
-			    	if (webDriver == null) {
-			    												System.out.println("webDriver IS NULL");
-			    	}
-//			    	if (webDriver != null) {
-						WebElement	createApplication_bn = webDriver.findElement(By.id(	"create-application"));
-//						WebElement	createApplication_bn = webDriver.findElement(By.className("class=fa-plus-circle"));	
-																System.out.println("WE FOUND THE HTML ATTR ID: .. create-application...");
-//						
-//					    if (		createApplication_bn != null) {
-//							if (	createApplication_bn.isEnabled()) {
-																System.out.println("createApplication_bn .. IS     ENABLED...!!");
-									createApplication_bn.click();
-//										
-//							} else {
-//																System.out.println("createApplication_bn .. IS NOT ENABLED -- BOO!");
-//							}
-//					    } else {
-//					    										System.out.println("createApplication_bn .. IS NULL");
-//					    }
-//			    	}
-//		    }
-									//	    WebElementFacade grantTypeDropdown;
-									//	    WebElementFacade submitButton;
-									//		    public void selectGrantTypeAndSubmit(String grantType) {
-									//				      grantTypeDropdown.selectByVisibleText(grantType);
-									//				      submitButton.click();
-									//		    }
-									//	    
-									//		    public void enterApplicationInformation (Map<String, String> map) {
-									//				      for (Map.Entry<String, String> entry : map.entrySet())   { driver.findElement(By.id(entry.getKey())).sendKeys(entry.getValue()); }
-									//				      driver.findElement(By.id("save-and-continue-button")).click();
-									//				    }  
+	public ApplicationsPage(WebDriver driver) {
+		super(driver);
+		webDriver = driver;
+		System.out.println("WE GOT TO THE CXR FOR ApplicationsPage");
+		if (webDriver == null) {
+			System.out.println("webDriver IS NULL!!");
+		}
+
+	}
+
+	public void createApplication() {
+
+		System.out.println("IN METHOD .. createApplication");
+		System.out.println("ABOUT TO CLICK createApplication_Link...!!");
+		createApplication_Link.click();
 	}
 }
-
-
-

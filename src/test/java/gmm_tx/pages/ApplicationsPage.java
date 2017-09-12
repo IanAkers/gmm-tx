@@ -12,7 +12,8 @@ import net.thucydides.core.pages.PageObject;
 
 public class ApplicationsPage extends PageObject {
 
-	@FindBy(xpath = "//a[@id='create-application']") WebElementFacade createApplicationLink;
+	@FindBy(xpath = "//a[@id='create-application']") 
+	WebElementFacade createApplicationLink;
 
 	public void createApplication() {
 									//System.out.println("IN METHOD .. createApplication");

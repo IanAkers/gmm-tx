@@ -72,3 +72,4 @@ public class ApplicationSteps {
 						System.out.println("\t\t@THEN:	\t the_user_should_see_the_confirmation_page ..  IN FILE ApplicationSteps.java");
 					}								
 }
+

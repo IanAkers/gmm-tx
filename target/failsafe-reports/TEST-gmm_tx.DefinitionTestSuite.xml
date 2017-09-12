@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="27.889" tests="16" errors="0" skipped="4" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="136.656" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -64,61 +64,17 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="Given the user has logged into GMM" classname="Scenario: Getting to page that shows application" time="0.001"/>
-  <testcase name="When the user clicks on the sidebar link for application" classname="Scenario: Getting to page that shows application" time="0"/>
+  <testcase name="When the user clicks on the sidebar link for application" classname="Scenario: Getting to page that shows application" time="0.001"/>
   <testcase name="Then they should see the page that lists their application" classname="Scenario: Getting to page that shows application" time="0"/>
-  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="5.281"/>
+  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="4.677"/>
   <testcase name="Given the user has logged into GMM" classname="Scenario: Create a grant application" time="0"/>
   <testcase name="When the user clicks on the link to create application" classname="Scenario: Create a grant application" time="0"/>
-  <testcase name="Then the user should see the page to select the grant type" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="Then the user should see the page to select the grant type" classname="Scenario: Create a grant application" time="0.001"/>
   <testcase name="When the user selects the grant type" classname="Scenario: Create a grant application" time="0"/>
-  <testcase name="Then the user should see the page to enter application data" classname="Scenario: Create a grant application" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0">
-    <skipped/>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
-[main] INFO net.serenitybdd.core.Serenity - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
-
-TEST PENDING: Create a grant application
----------------------------------------------------------------------------------
-[pool-3-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Getting to page that shows application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json15d53061-ee42-4c71-94c6-3f0b19c32efb)
-[pool-3-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Create a grant application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.jsoneaa21fbd-fce0-4200-8070-0ecabe161531)
-[pool-4-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Getting to page that shows application in a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.html in directory target/site/serenity  
-[pool-4-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Create a grant application in 455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.html in directory target/site/serenity  
-]]></system-err>
-  </testcase>
-  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.973"/>
+  <testcase name="Then the user should see the page to enter application data" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.835"/>
   <testcase name="Given the user has logged into GMM" classname="Scenario: Enter application data" time="0"/>
   <testcase name="When the user enters all application data and saves" classname="Scenario: Enter application data" time="0"/>
-  <testcase name="Then the user should see the confirmation page" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
-[main] INFO net.serenitybdd.core.Serenity - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
-
-TEST PENDING: Enter application data
----------------------------------------------------------------------------------
-[pool-5-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Getting to page that shows application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.jsonea59cb56-4dbf-49d1-8a31-d2e337fe614a)
-[pool-5-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Create a grant application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.json02f191da-ceb6-4178-baaa-3af2736c2600)
-[pool-5-thread-3] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Enter application data to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.jsond3ea32a0-8d26-4a54-a002-831c23d7462c)
-[pool-6-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Getting to page that shows application in a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.html in directory target/site/serenity  
-[pool-6-thread-3] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Enter application data in d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.html in directory target/site/serenity  
-[pool-6-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Create a grant application in 455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.html in directory target/site/serenity  
-]]></system-err>
-  </testcase>
-  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0.867"/>
+  <testcase name="Then the user should see the confirmation page" classname="Scenario: Enter application data" time="0"/>
+  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0.643"/>
 </testsuite>

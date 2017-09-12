@@ -59,17 +59,16 @@ public class ApplicationSteps {
 				System.out.println("\t@WHEN:	\t searchGrantType ..  IN FILE ApplicationSteps.java");
 			}		
 			
-					@Then("^the user sees the page to enter application data$")
-					public void the_user_sees_the_page_to_enter_application_data() throws Throwable{
-						System.out.println("\t\t@THEN:	\t the_user_should_see_the_page_to_select_the_grant_type ..  IN FILE ApplicationSteps.java");
-					}					
+				@Then("^the user should see the page to enter application data$")
+				public void the_user_should_see_the_page_to_enter_application_data() throws Throwable {
+							System.out.println("\t\t@THEN:	\t the_user_should_see_the_page_to_select_the_grant_type ..  IN FILE ApplicationSteps.java");
+						}					
 			@When("^the user enters all application data and saves$")
 			public void the_user_enters_all_application_data_and_saves() throws Throwable {
 				System.out.println("\t@WHEN:	\t the_user_enters_all_application_data_and_saves ..  IN FILE ApplicationSteps.java");
 			}		
-					@Then("^the user should see the confirmation page $")
-					public void the_user_should_see_the_confirmation_page () throws Throwable{
-						System.out.println("\t\t@THEN:	\t the_user_should_see_the_confirmation_page ..  IN FILE ApplicationSteps.java");
-					}								
+				@Then("^the user should see the confirmation page$")
+				public void the_user_should_see_the_confirmation_page() throws Throwable {
+							System.out.println("\t\t@THEN:	\t the_user_should_see_the_confirmation_page ..  IN FILE ApplicationSteps.java");
+						}								
 }
-

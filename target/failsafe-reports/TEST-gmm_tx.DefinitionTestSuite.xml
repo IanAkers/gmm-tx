@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="23.83" tests="12" errors="2" skipped="2" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="75.621" tests="17" errors="2" skipped="7" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -66,8 +66,9 @@
   <testcase name="Given the user has logged into GMM" classname="Scenario: Getting to page that shows application" time="0.002"/>
   <testcase name="When the user clicks on the sidebar link for application" classname="Scenario: Getting to page that shows application" time="0"/>
   <testcase name="Then they should see the page that lists their application" classname="Scenario: Getting to page that shows application" time="0"/>
-  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="6.704"/>
-  <testcase name="Given the user is on the page that shows applications" classname="Scenario: Create a grant application" time="0.016">
+  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="5.445"/>
+  <testcase name="Given the user has logged into GMM" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="When the user is on the page that shows applications" classname="Scenario: Create a grant application" time="0.196">
     <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
@@ -75,44 +76,58 @@ Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
 </error>
-    <system-out><![CDATA[@GIVEN:		 the_user_is_on_the_page_that_shows_applications ..  IN FILE ApplicationSteps.java
-WE GOT TO THE CXR FOR ApplicationsPage
-IN METHOD .. createApplication
-ABOUT TO CLICK createApplicationLink...!!
-]]></system-out>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Create a grant application
--------------------------------------------------------------------(navigate-gmm;create-a-grant-application)
-Starting ChromeDriver 2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b) on port 39023
-Only local connections are allowed.
-Sep 12, 2017 10:11:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
+  </testcase>
+  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.198">
+    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="And the user clicks on the link to create application" classname="Scenario: Create a grant application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then the user should see the page to select the grant type" classname="Scenario: Create a grant application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="When the user selects the grant type" classname="Scenario: Create a grant application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then the user sees the page to enter application data" classname="Scenario: Create a grant application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given the user has logged into GMM" classname="Scenario: Enter application data" time="0"/>
+  <testcase name="When the user enters all application data and saves" classname="Scenario: Enter application data" time="0"/>
+  <testcase name="And hit the save button" classname="Scenario: Enter application data" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then the user should see the confirmation page" classname="Scenario: Enter application data" time="0">
+    <skipped/>
+    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
 ]]></system-err>
   </testcase>
-  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.017">
-    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-Timed out after 2 seconds. Element not found
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
-Driver info: driver.version: unknown
-</error>
-  </testcase>
-  <testcase name="When the user clicks on the link to create application" classname="Scenario: Create a grant application" time="0">
+  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0">
     <skipped/>
+    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
+[main] INFO net.serenitybdd.core.Serenity - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Enter application data
+---------------------------------------------------------------------------------
+[pool-5-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Getting to page that shows application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json0d110dc4-451a-4af8-9da5-65a14417ba90)
+[pool-5-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Create a grant application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.json8bcc1705-d78b-45fc-b737-18d52594a239)
+[pool-5-thread-3] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Enter application data to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.json64764331-4a7f-43bb-83b1-8df825fec67d)
+[pool-6-thread-3] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Enter application data in d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.html in directory target/site/serenity  
+[pool-6-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Create a grant application in 455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.html in directory target/site/serenity  
+[pool-6-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Getting to page that shows application in a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.html in directory target/site/serenity  
+]]></system-err>
   </testcase>
-  <testcase name="Then they should see the page to enter application data" classname="Scenario: Create a grant application" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Given the user has entered all application data" classname="Scenario: Enter application data" time="0"/>
-  <testcase name="When the user hits the button to save" classname="Scenario: Enter application data" time="0"/>
-  <testcase name="Then they should see the confirmation page" classname="Scenario: Enter application data" time="0"/>
-  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0.131"/>
+  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="1.089"/>
 </testsuite>

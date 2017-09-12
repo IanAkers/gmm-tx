@@ -17,43 +17,26 @@ import java.util.Map;
 @DefaultUrl("http://localhost:8080/Application/searchGrantTypes")
 
 public class SearchGrantTypePage extends PageObject {
-	private WebDriver webDriver = null;
-	private WebElement searchGrantType_bn;
+//	private WebDriver webDriver = null;
+//	private WebElement searchGrantType_bn;
+	
+	@FindBy(id="selectGrantType")   WebElementFacade searchGrantType_dropdown;
 
-	// START CONSTRUCTOR
-	public SearchGrantTypePage(WebDriver driver) {
-		super(driver);
-		webDriver = driver;
-		System.out.println("WE GOT TO THE CXR FOR searchGrantType");
-		if (webDriver == null) {
-			System.out.println("WEBDRIVER HERE IS NULL!!");
-		}
+//	// START CONSTRUCTOR
+//	public SearchGrantTypePage(WebDriver driver) {
+//		super(driver);
+//		webDriver = driver;
+//		System.out.println("WE GOT TO THE CXR FOR searchGrantType");
+//		if (webDriver == null) {
+//			System.out.println("WEBDRIVER HERE IS NULL!!");
+//		}
+//
+//	}
+//	// END CONSTRUCTOR
 
-	}
-	// END CONSTRUCTOR
-
-	public void searchGrantType() {
-
-		System.out.println("IN selectGrantType");
-		if (webDriver == null) {
-			System.out.println("WEBDRIVER HERE IS NULL!!");
-		}
-		if (webDriver != null) {
-			WebElement selectGrantType_chevron = webDriver.findElement(By.className("toggle"));
-			System.out.println("HAVE FOUND THE ARROW-DOWN TOGGLE CHEVRON...");
-
-			if (selectGrantType_chevron != null) {
-				if (selectGrantType_chevron.isEnabled()) {
-					System.out.println("selectGrantType_chevron IS ENABLED...!!");
-					selectGrantType_chevron.click();
-
-				} else {
-					System.out.println("selectGrantType_chevron IS NOT ENABLED -- BOO!");
-				}
-			} else {
-				System.out.println("selectGrantType_chevron IS NULL");
-			}
-		}
+	public void searchGrantType(String grantType) {
+		        searchGrantType_dropdown.selectByVisibleText(grantType);
+		    		}
 	}
 	// WebElementFacade grantTypeDropdown;
 	// WebElementFacade submitButton;
@@ -67,4 +50,3 @@ public class SearchGrantTypePage extends PageObject {
 	// driver.findElement(By.id(entry.getKey())).sendKeys(entry.getValue()); }
 	// driver.findElement(By.id("save-and-continue-button")).click();
 	// }
-}

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: gmm_tx.DefinitionTestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 23.83 sec <<< FAILURE! - in gmm_tx.DefinitionTestSuite
-Given the user is on the page that shows applications(Scenario: Create a grant application)  Time elapsed: 0.016 sec  <<< ERROR!
+Tests run: 17, Failures: 0, Errors: 2, Skipped: 7, Time elapsed: 75.621 sec <<< FAILURE! - in gmm_tx.DefinitionTestSuite
+When the user is on the page that shows applications(Scenario: Create a grant application)  Time elapsed: 0.196 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
 Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
@@ -10,7 +10,7 @@ Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
 
-Scenario: Create a grant application  Time elapsed: 0.017 sec  <<< ERROR!
+Scenario: Create a grant application  Time elapsed: 0.198 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: 
 Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html

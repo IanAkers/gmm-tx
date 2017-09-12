@@ -3,4 +3,3 @@ gmm_tx/pages/SearchGrantTypePage.class
 gmm_tx/steps/ApplicationSteps.class
 gmm_tx/pages/HomePage.class
 gmm_tx/pages/ApplicationsPage.class
-gmm_tx/steps/serenity/EndUserSteps.class

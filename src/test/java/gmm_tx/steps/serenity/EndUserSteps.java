@@ -18,22 +18,22 @@ import org.openqa.selenium.WebElement;
 //				ADDED THIS W EVS SAT AM @ FOO
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class EndUserSteps {
-
-	ApplicationsPage applicationPage;
-
-	private WebElement createApplication_bn;
-
-	@Step
-
-	public void createApplication() {
-		WebDriver webDriver = new ChromeDriver();
-		applicationPage = new ApplicationsPage(webDriver);
-		createApplication_bn.click();
-		System.out.println("RIGHT AFTER CLICKED BUTTON:  createApplication_bn 	WE ARE IN FILE EndUserSteps.java ... ");
-	}
-
-}
+//public class EndUserSteps {
+//
+//	ApplicationsPage applicationPage;
+//
+//	private WebElement createApplication_bn;
+//
+//	@Step
+//
+//	public void createApplication() {
+//		WebDriver webDriver = new ChromeDriver();
+////		applicationPage = new ApplicationsPage(webDriver);
+//		createApplication_bn.click();
+//		System.out.println("RIGHT AFTER CLICKED BUTTON:  createApplication_bn 	WE ARE IN FILE EndUserSteps.java ... ");
+//	}
+//
+//}
 // @Step
 // public void starts_search() {
 // dictionaryPage.lookup_terms();

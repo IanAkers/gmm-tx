@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="28.393" tests="12" errors="2" skipped="2" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="23.83" tests="12" errors="2" skipped="2" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.131-b11"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/justingiron/gmm/gmm_tx"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,21 +17,23 @@
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx"/>
-    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.io.tmpdir" value="/var/folders/tq/mbnqhb1j0b5fm9h0l1_7__4c0000gn/T/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8698336302572639968.tmp"/>
+    <property name="classworlds.conf" value="/applications_/apache-maven-3.5.0/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/justingiron/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/applications_/apache-maven-3.5.0/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.12.6"/>
+    <property name="library.jansi.path" value="/applications_/apache-maven-3.5.0/lib/jansi-native/osx64"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/justingiron"/>
     <property name="user.timezone" value="America/New_York"/>
@@ -39,21 +41,20 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="justingiron"/>
-    <property name="java.class.path" value="/applications_/Eclipse.app/Contents/Eclipse/../../../../Users/justingiron/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/applications_/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install -U"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -U"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_111"/>
-    <property name="java.ext.dirs" value="/Users/justingiron/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
-    <property name="webdriver.chrome.driver" value="/Applications/gg/chromedriver"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="/Users/justingiron/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/EMBEDDED"/>
+    <property name="maven.home" value="/applications_/apache-maven-3.5.0"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -65,19 +66,19 @@
   <testcase name="Given the user has logged into GMM" classname="Scenario: Getting to page that shows application" time="0.002"/>
   <testcase name="When the user clicks on the sidebar link for application" classname="Scenario: Getting to page that shows application" time="0"/>
   <testcase name="Then they should see the page that lists their application" classname="Scenario: Getting to page that shows application" time="0"/>
-  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="12.598"/>
-  <testcase name="Given the user is on the page that shows applications" classname="Scenario: Create a grant application" time="0.008">
-    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.users.bah.com&apos;, ip: &apos;fe80:0:0:0:436:d7db:895f:15ff%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="6.704"/>
+  <testcase name="Given the user is on the page that shows applications" classname="Scenario: Create a grant application" time="0.016">
+    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
 </error>
     <system-out><![CDATA[@GIVEN:		 the_user_is_on_the_page_that_shows_applications ..  IN FILE ApplicationSteps.java
 WE GOT TO THE CXR FOR ApplicationsPage
 IN METHOD .. createApplication
-ABOUT TO CLICK createApplication_Link...!!
+ABOUT TO CLICK createApplicationLink...!!
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
@@ -89,18 +90,18 @@ ABOUT TO CLICK createApplication_Link...!!
 
 TEST STARTED: Create a grant application
 -------------------------------------------------------------------(navigate-gmm;create-a-grant-application)
-Starting ChromeDriver 2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b) on port 27548
+Starting ChromeDriver 2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b) on port 39023
 Only local connections are allowed.
-Sep 11, 2017 2:06:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 12, 2017 10:11:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
   </testcase>
-  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.008">
-    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.users.bah.com&apos;, ip: &apos;fe80:0:0:0:436:d7db:895f:15ff%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.017">
+    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
 </error>
   </testcase>
@@ -113,5 +114,5 @@ Driver info: driver.version: unknown
   <testcase name="Given the user has entered all application data" classname="Scenario: Enter application data" time="0"/>
   <testcase name="When the user hits the button to save" classname="Scenario: Enter application data" time="0"/>
   <testcase name="Then they should see the confirmation page" classname="Scenario: Enter application data" time="0"/>
-  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0.396"/>
+  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0.131"/>
 </testsuite>

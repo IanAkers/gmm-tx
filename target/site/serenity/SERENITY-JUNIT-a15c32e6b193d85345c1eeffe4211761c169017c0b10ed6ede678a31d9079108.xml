@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Navigate GMM" skipped="0" tests="3" time="13.59" timestamp="2017-09-11T14:05:38.394-04:00[America/New_York]"><testcase name="Getting to page that shows application"/><testcase name="Create a grant application"><error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 2 seconds. Element not found
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Navigate GMM" skipped="0" tests="3" time="14.13" timestamp="2017-09-12T10:11:35.947-04:00[America/New_York]"><testcase name="Getting to page that shows application"/><testcase name="Create a grant application"><error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not found
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.users.bah.com', ip: 'fe80:0:0:0:436:d7db:895f:15ff%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_111'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
-gmm_tx.pages.ApplicationsPage.createApplication(ApplicationsPage.java:57)
-gmm_tx.steps.ApplicationSteps.the_user_is_on_the_page_that_shows_applications(ApplicationSteps.java:96)
+gmm_tx.pages.ApplicationsPage.createApplication(ApplicationsPage.java:39)
+gmm_tx.steps.ApplicationSteps.the_user_is_on_the_page_that_shows_applications(ApplicationSteps.java:83)
 ✽.Given the user is on the page that shows applications(CreateApplication.feature:11)
 </system-err></testcase><testcase name="Enter application data"/></testsuite>

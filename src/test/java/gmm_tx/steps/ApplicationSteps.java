@@ -6,12 +6,14 @@ import cucumber.api.java.en.When;
 import gmm_tx.pages.ApplicationsPage;
 import gmm_tx.pages.HomePage;
 import gmm_tx.pages.SearchGrantTypePage;
+import gmm_tx.pages.EnterApplicationDataPage;
 
 public class ApplicationSteps {
 
 	ApplicationsPage applicationsPage;
 	HomePage homePage;
 	SearchGrantTypePage searchGrantTypePage;
+	EnterApplicationDataPage enterApplicationDataPage;
 
 
 	@Given("^the user has logged into GMM$")
@@ -55,18 +57,51 @@ public class ApplicationSteps {
 					}
 
 			@When("^the user selects the grant type$")
-			public void searchGrantType() throws Throwable {
-				System.out.println("\t@WHEN:	\t searchGrantType ..  IN FILE ApplicationSteps.java");
+			public void selectGrantType() throws Throwable {
+				searchGrantTypePage.selectGrantType("Flood Recovery Grant");
+				System.out.println("\t@WHEN:	\t selectGrantType ..  IN FILE ApplicationSteps.java");
 			}		
+			
+			@When("^the user hits the submit button$")
+			public void selectGrantType_bn_submit() throws Throwable {
+				searchGrantTypePage.clickGrantTypeSubmitButton();				
+				System.out.println("\t@WHEN:	\t selectGrantType_bn_submit ..  IN FILE ApplicationSteps.java");
+			}			
 			
 				@Then("^the user should see the page to enter application data$")
 				public void the_user_should_see_the_page_to_enter_application_data() throws Throwable {
 							System.out.println("\t\t@THEN:	\t the_user_should_see_the_page_to_select_the_grant_type ..  IN FILE ApplicationSteps.java");
 						}					
-			@When("^the user enters all application data and saves$")
-			public void the_user_enters_all_application_data_and_saves() throws Throwable {
-				System.out.println("\t@WHEN:	\t the_user_enters_all_application_data_and_saves ..  IN FILE ApplicationSteps.java");
+
+				@When("^the user enters the general information \'(.*)\'$")
+			public void enterGeneralInformation (String orgName, String typeOfApplication, String congressionalDistrict, String projectTitle, String projectNumber, String projectYear, String submissionDate) 
+			{
+//				enterApplicationDataPage.enterGeneralInformation(orgName, typeOfApplication, congressionalDistrict, projectTitle, projectNumber, projectYear, submissionDate);
+				enterApplicationDataPage.enterGeneralInformation("orgName", "typeOfApplication", "congressionalDistrict", "projectTitle", "projectNumber", "projectYear", "submissionDate");
+				System.out.println("\t@WHEN:	\t enterGeneralInformation ..  IN FILE ApplicationSteps.java");
 			}		
+
+			@When("^the user enters the grant information\"(.*)\"$")
+			public void enterGrantInformation(String grantValue, String dispersementSchedule) 
+			{	
+				enterApplicationDataPage.enterGrantInformation( grantValue,  dispersementSchedule);
+				System.out.println("\t@WHEN:	\t enterGrantInformation ..  IN FILE ApplicationSteps.java");
+			}		
+			
+			@When("^the user enters the address information\"(.*)\"$")
+			public void enterAddressInformation(String addressLine1, String addressLine2, String city, String state, String zipCode) 
+			{	
+				enterApplicationDataPage.enterAddressInformation(addressLine1, addressLine2, city, state, zipCode 	);
+				System.out.println("\t@WHEN:	\t enterAddressInformation ..  IN FILE ApplicationSteps.java");
+			}			
+
+			@When("^the user hits the button")
+			public void saveAndContinueButton(	) 
+			{	
+				enterApplicationDataPage.saveAndContinueButton();
+				System.out.println("\t@WHEN:	\t saveAndContinueButton ..  IN FILE ApplicationSteps.java");
+			}				
+			
 				@Then("^the user should see the confirmation page$")
 				public void the_user_should_see_the_confirmation_page() throws Throwable {
 							System.out.println("\t\t@THEN:	\t the_user_should_see_the_confirmation_page ..  IN FILE ApplicationSteps.java");

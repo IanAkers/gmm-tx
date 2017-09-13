@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Navigate GMM","Getting to page that shows application","SUCCESS","2017-09-12T18:06:58.837-04:00[America/New_York]","0.0","9.05"
-"Navigate GMM","Create a grant application","SUCCESS","2017-09-12T18:07:12.306-04:00[America/New_York]","0.0","112.21"
-"Navigate GMM","Enter application data","SUCCESS","2017-09-12T18:09:05.035-04:00[America/New_York]","0.0","7.32"
+"Navigate GMM","Getting to page that shows application","SUCCESS","2017-09-13T16:45:06.928-04:00[America/New_York]","0.0","12.89"
+"Navigate GMM","Create a grant application","ERROR","2017-09-13T16:45:26.665-04:00[America/New_York]","0.0","13.34"
+"Navigate GMM","Enter application data","PENDING","2017-09-13T16:45:41.141-04:00[America/New_York]","0.0","7.24"

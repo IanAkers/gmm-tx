@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Navigate GMM" skipped="0" tests="3" time="128.57" timestamp="2017-09-12T18:06:58.837-04:00[America/New_York]"><testcase name="Getting to page that shows application"/><testcase name="Create a grant application"/><testcase name="Enter application data"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Navigate GMM" skipped="1" tests="3" time="33.48" timestamp="2017-09-13T16:45:06.928-04:00[America/New_York]"><testcase name="Getting to page that shows application"/><testcase name="Create a grant application"><error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
+Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+gmm_tx.pages.SearchGrantTypePage.selectGrantType(SearchGrantTypePage.java:25)
+gmm_tx.steps.ApplicationSteps.selectGrantType(ApplicationSteps.java:61)
+✽.When the user selects the grant type(CreateApplication.feature:14)
+</system-err></testcase><testcase name="Enter application data"><skipped/></testcase></testsuite>

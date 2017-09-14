@@ -1,140 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="45.22" tests="19" errors="2" skipped="8" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="gmm_tx.DefinitionTestSuite" time="22.425" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.131-b11"/>
-    <property name="gopherProxySet" value="false"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="java.vm.version" value="25.144-b01"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/justingiron/gmm/gmm_tx"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/587170/gmm_tx"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx"/>
-    <property name="java.runtime.version" value="1.8.0_131-b11"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/tq/mbnqhb1j0b5fm9h0l1_7__4c0000gn/T/"/>
+    <property name="user.dir" value="C:\Users\587170\gmm_tx"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\587170\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/applications_/apache-maven-3.5.0/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/justingiron/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/applications_/apache-maven-3.5.0/conf"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:/Users/587170/gmmDownloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\587170\gmmDownloads\apache-maven-3.5.0\bin;C:\Users\587170\bin;C:\Users\587170\AppData\Local\Programs\Git\mingw64\bin;C:\Users\587170\AppData\Local\Programs\Git\usr\local\bin;C:\Users\587170\AppData\Local\Programs\Git\usr\bin;C:\Users\587170\AppData\Local\Programs\Git\usr\bin;C:\Users\587170\AppData\Local\Programs\Git\mingw64\bin;C:\Users\587170\AppData\Local\Programs\Git\usr\bin;C:\Users\587170\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\nodejs;C:\Go\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Users\587170\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\587170\AppData\Local\Programs\Python\Python36;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\nodejs;C:\Go\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Users\587170\AppData\Local\Google\Chrome\Application;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Bitvise SSH Client;C:\Progr;C:\Users\587170\AppData\Local\Programs\Git\cmd; C;C:\Users\587170\AppData\Local\Programs\Git\Users\587170\AppData\Local\Programs\Python\Python36-32;C:\Users\587170\AppData\Local\atom;C:\Users\587170\gmmDownloads\apache-maven-3.5.0\bin;C:\Users\587170\googleTools;C:\Users\587170\AppData\Local\Programs\Git\usr\bin\vendor_perl;C:\Users\587170\AppData\Local\Programs\Git\usr\bin\core_perl;."/>
+    <property name="maven.conf" value="C:/Users/587170/gmmDownloads/apache-maven-3.5.0/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.12.6"/>
-    <property name="library.jansi.path" value="/applications_/apache-maven-3.5.0/lib/jansi-native/osx64"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/justingiron"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\Users\587170\gmmDownloads\apache-maven-3.5.0\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\587170"/>
     <property name="user.timezone" value="America/New_York"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="justingiron"/>
-    <property name="java.class.path" value="/applications_/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="587170"/>
+    <property name="java.class.path" value="C:/Users/587170/gmmDownloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install clean -U"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -U"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_131"/>
-    <property name="java.ext.dirs" value="/Users/justingiron/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/applications_/apache-maven-3.5.0"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="C:\Users\587170\gmmDownloads\apache-maven-3.5.0"/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given the user has logged into GMM" classname="Scenario: Getting to page that shows application" time="0.001"/>
-  <testcase name="When the user clicks on the sidebar link for application" classname="Scenario: Getting to page that shows application" time="0"/>
-  <testcase name="Then they should see the page that lists their application" classname="Scenario: Getting to page that shows application" time="0.001"/>
-  <testcase name="Scenario: Getting to page that shows application" classname="Scenario: Getting to page that shows application" time="7.257"/>
-  <testcase name="Given the user has logged into GMM" classname="Scenario: Create a grant application" time="0"/>
-  <testcase name="When the user clicks on the link to create application" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="Given the user has logged into GMM" classname="Scenario: Create a grant application" time="0.002"/>
+  <testcase name="When the user clicks on the sidebar link for application" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="And the user clicks on the link to create application" classname="Scenario: Create a grant application" time="0"/>
   <testcase name="Then the user should see the page to select the grant type" classname="Scenario: Create a grant application" time="0"/>
-  <testcase name="When the user selects the grant type" classname="Scenario: Create a grant application" time="0.025">
-    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-Timed out after 2 seconds. Element not found
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
-Driver info: driver.version: unknown
-</error>
-  </testcase>
-  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="0.025">
-    <error message="Timed out after 2 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;c1ms50tsh3qk.usae.bah.com&apos;, ip: &apos;fe80:0:0:0:10c3:d320:a8b4:6515%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-Timed out after 2 seconds. Element not found
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'c1ms50tsh3qk.usae.bah.com', ip: 'fe80:0:0:0:10c3:d320:a8b4:6515%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_131'
-Driver info: driver.version: unknown
-</error>
-  </testcase>
-  <testcase name="And the user hits the submit button" classname="Scenario: Create a grant application" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then the user should see the page to enter application data" classname="Scenario: Create a grant application" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Given the user has logged into GMM" classname="Scenario: Enter application data" time="0"/>
-  <testcase name="When the user enters the general information" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="And the user enters the grant information" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
-]]></system-err>
-  </testcase>
-  <testcase name="And the user enters the address information" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
-]]></system-err>
-  </testcase>
-  <testcase name="And the user hits the button" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - TEST PENDING
-]]></system-err>
-  </testcase>
-  <testcase name="Then the user should see the confirmation page" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="0">
-    <skipped/>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
-
-TEST PENDING: Enter application data
----------------------------------------------------------------------------------
-[pool-5-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Getting to page that shows application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.json5c5a2b19-2086-427c-80a3-dfaa48302e5b)
-[pool-5-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Create a grant application to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.jsonb3e35a2e-6250-4cd0-a5a8-b04bd1b00445)
-[pool-5-thread-3] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Enter application data to file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.json (using temp file /Users/justingiron/OneDrive - Booz Allen Hamilton/x/gmm/gmm_tx/target/site/serenity/d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.jsonb35e7447-467d-433e-99d8-83dbfefd01b6)
-[pool-6-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Getting to page that shows application in a15c32e6b193d85345c1eeffe4211761c169017c0b10ed6ede678a31d9079108.html in directory target/site/serenity  
-[pool-6-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Create a grant application in 455d0c9ea910e2a037ec7f58eec3a5c31a03e27ccd7ec0de04ba310f5fdb0f4b.html in directory target/site/serenity  
-[pool-6-thread-3] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Navigate GMM:Enter application data in d843cea525b2b8656971e495cf7fa8e170e9693a1ed82b0dd80ec622bb3864d3.html in directory target/site/serenity  
-]]></system-err>
-  </testcase>
-  <testcase name="Scenario: Enter application data" classname="Scenario: Enter application data" time="1.975"/>
+  <testcase name="When the user selects the grant type" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="And the user hits the submit button" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="Then the user should see the page to enter application data" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="When the user enters the general information" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="And the user enters the grant information" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="And the user enters the address information" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="And the user hits the button" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="Then the user should see the confirmation page" classname="Scenario: Create a grant application" time="0"/>
+  <testcase name="Scenario: Create a grant application" classname="Scenario: Create a grant application" time="2.596"/>
 </testsuite>

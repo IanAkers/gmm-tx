@@ -9,7 +9,7 @@
     import net.serenitybdd.core.annotations.findby.FindBy;
     import net.thucydides.core.pages.PageObject;
     
-    @DefaultUrl("http://localhost:8080/Application/createApplication")
+    @DefaultUrl("http://ui-dev.ocp-apps.bahincubator.com/Application/createApplication")
 
     public class EnterApplicationDataPage extends PageObject {
     	@FindBy(xpath = "/html/body/div/div/app-root/app-application/dynamic-component/div/div/div/div[2]/sf-form/form/sf-form-element/div/sf-widget-chooser/sf-form-object/fieldset[1]/div[1]/sf-form-element/div/sf-widget-chooser/sf-string-widget/div/input")
@@ -79,15 +79,15 @@
     	
     	public void enterGrantInformation(String grantValue, String dispersementSchedule) {
     		grantValueInput.sendKeys(grantValue);
-    		dispersementScheduleSelect.selectByVisibleText(dispersementSchedule);
+//    		dispersementScheduleSelect.selectByVisibleText(dispersementSchedule);
     	}
     	
     	public void enterAddressInformation(String addressLine1, String addressLine2, String city, String state, String zipCode	) {
     		addressLine1Input.sendKeys(addressLine1);
     		addressLine2Input.sendKeys(addressLine2);
     		cityInput.sendKeys(city);
-    		stateInput.sendKeys(state);
-    		zipCodeInput.sendKeys(zipCode);
+//    		stateInput.sendKeys(state);
+//    		zipCodeInput.sendKeys(zipCode);
     	}
     	
     	public void saveAndContinueButton() {
